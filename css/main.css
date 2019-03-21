@@ -378,8 +378,7 @@ input {
 }
 
 .equipment {
-	background: url('../images/gas-station.png') no-repeat;
-	background-position: center;
+	background: url('../images/gas-station.png') no-repeat center;
 }
 
 .equipment__description {
