@@ -108,7 +108,7 @@ input {
 }
 
 .header__mail, .footer__mail {
-	background: url('../images/Email.png') no-repeat left;
+	background: url('../images/mail.png') no-repeat left;
 	font-size: 16px;
 	font-weight: 600; 
 	margin-left: 50px;
@@ -189,8 +189,7 @@ input {
 
 
 .diesel {
-	background: url('../images/Track2.png') no-repeat;
-	background-position: center;
+	background: url('../images/Track2.png') no-repeat center;
 }
 
 .diesel__description {
@@ -378,7 +377,7 @@ input {
 }
 
 .equipment {
-	background: url('../images/gasstation.png') no-repeat center;
+	background: url('../images/gas.png') no-repeat center;
 }
 
 .equipment__description {
