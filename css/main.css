@@ -13,7 +13,7 @@ a {
 	text-decoration: none;
 }
 
-ul, li {
+ul, li, a {
 	display: block;
 	padding: 0;
 	margin: 0;
@@ -144,7 +144,7 @@ input {
 	background-color: #ffffff;
 }
 
-.positions {
+.goods__positions {
 	height: 544px;
 	background-color: #ffffff;
 	border-radius: 20px;
@@ -154,13 +154,13 @@ input {
 	padding-top: 65px;
 }
 
-.positions_item {
+.goods__item {
 	width: 280px;
 	margin-right: 32px;
 	text-align: center;
 }
 
-.positions__description {
+.goods__description {
 	line-height: 24px;
 	margin-bottom: 22px;
 }
@@ -184,8 +184,8 @@ input {
 	margin: 0 auto;
 }
 
-.link-more {
-	color: #fff;
+.button-more:hover {
+	background: #000;
 }
 
 
@@ -273,7 +273,13 @@ input {
 	font-size: 22px;
 	text-align: center;
 	text-transform: uppercase;
-	padding-top: 9px;
+	padding-top: 8px;
+}
+
+.form__button:hover {
+	background: #000;
+	border: 2px solid;
+    border-color: #fff;
 }
 
 .form__link {
@@ -363,10 +369,15 @@ input {
 	background: #9a1c2d;
 	border: none;
 	font-size: 22px;
+	color: #fff;
 	text-align: center;
 	text-transform: uppercase;
-	padding-top: 10px;
+	padding-top: 8px;
 	margin-bottom: 50px;
+}
+
+.brands__download:hover {
+	background: #000;
 }
 
 .temol {
@@ -382,13 +393,13 @@ input {
 }
 
 .equipment__description {
-	padding-top: 65px;
+	padding-top: 40px;
 	text-align: center;
 	padding-bottom: 65px;
 }
 
 .equipment__more {
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .equipment__download {
@@ -399,9 +410,17 @@ input {
 	border: none;
 	font-size: 22px;
 	text-align: center;
+	color: #fff;
 	text-transform: uppercase;
-	padding-top: 10px;
-	margin: 0 auto ;
+	padding-top: 8px;
+	margin: 0 auto;
+	
+}
+
+.equipment__download:hover {
+	background: #000;
+	border: 2px solid;
+    border-color: #fff;
 }
 
 .third {
@@ -440,12 +459,16 @@ input {
 	height: 48px;
 	border-radius: 4px;
 	background: #9a1c2d;
-	border: 1px solid;
+	border: 2px solid;
 	border-color: #fff;
 	font-size: 22px;
 	text-align: center;
 	text-transform: uppercase;
 	padding-top: 7px;
+}
+
+.question__button:hover {
+	background: #000;
 }
 
 .question__item {
@@ -490,6 +513,32 @@ input {
 	padding-top: 5px;
 	padding-bottom: 7px;
 }
+
+#go-top {
+  position: fixed; 
+  font-family: sans-serif;
+  line-height: 30px;
+  text-align: center;
+  color: #fff;
+  bottom: 25px; 
+  right: 50px; 
+  cursor:pointer; 
+  display:none;
+  width: 70px;
+  height: 30px;
+  background: #9a1c2d;
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: #fff; 
+  text-transform: uppercase;
+  padding-bottom: 28px;
+}
+
+#go-top:hover {
+  background: #000;
+}
+
+
 
 .form__button:hover {
 	box-shadow: 0px 0px 40px rgba(0,0,0,0.6);

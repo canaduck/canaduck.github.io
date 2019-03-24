@@ -21,6 +21,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/go_top.css">
+	<script src="js/jquery-2.2.1.min.js"></script>
+	<script src="js/go_top.js"></script>
 </head>
 <body>
 	<header class="header" id="header">
@@ -56,36 +59,30 @@
 			</div>
 		</div>
 	</section>
-	<section class="goods" id="goods">
+	<section class="goods">
 		<div class="container">
-			<div class="positions">
-				<div class="positions_item">
+			<div class="goods__positions" id="goods">
+				<div class="goods__item">
 					<div><img src="images/pistol.png" alt="pistol"></div>
 					<h3>Дизельное топливо</h3>
-					<div class="positions__description">Евро 5 высокого качества (Башнефть, Уфа) оптом с доставкой собственным транспортом или самовывозомпо ценам производителя</div>
-					<div class="button-more">
-						<a class="link-more" href="#diesel">Подробнее</a>
-					</div>
+					<div class="goods__description">Евро 5 высокого качества (Башнефть, Уфа) оптом с доставкой собственным транспортом или самовывозомпо ценам производителя</div>
+					<a class="button-more" href="#diesel">Подробнее</a>
 				</div>
-				<div class="positions_item">
+				<div class="goods__item">
 					<div><img src="images/oil.png" alt="oil"></div>
 					<h3>Масла и жидкости</h3>
-					<div class="positions__description">
+					<div class="goods__description">
 						<div class="brands-list">Ravenol</div>
 						<div class="brands-list">Temol</div>
 						<div class="brands-list">KMS Protec</div>
 					</div>
-					<div class="button-more">
-						<a class="link-more" href="#brands">Подробнее</a>
-					</div>
+					<a class="button-more" href="#brands">Подробнее</a>
 				</div>
-				<div class="positions_item">
+				<div class="goods__item">
 					<div><img src="images/station.png" alt="station"></div>
 					<h3>Оборудование для АЗС</h3>
-					<div class="positions__description">Раздаточные колонки, модули и ёмкости для бензина, дизельного топлива, газа и масла</div>
-					<div class="button-more">
-						<a class="link-more" href="#equipment">Подробнее</a>
-					</div>
+					<div class="goods__description">Раздаточные колонки, модули и ёмкости для бензина, дизельного топлива, газа и масла</div>
+					<a class="button-more" href="#equipment">Подробнее</a>
 				</div>
 			</div>
 		</div>
@@ -171,9 +168,7 @@
 						<div class="brands__paragh">
 						Моторные, трансмиссионные, специальные масла RAVENOL, а также пластичные смазки, технологические жидкости обеспечат оптимальное бесперебойное функционирование, как самой современной техники, так и техники предыдущих поколений. Ассортимент, который содержит весь спектр масел, жидкостей и смазок для любой техники и промышленных механизмов, постоянно дополняется смазочными материалами высокого качества.
  						</div>
- 						<div class="brands__download">
-							<a class="link-more" href="resourses/Ravenol.docx" download>Скачать прайс</a>
-						</div>
+ 						<a class="brands__download" href="resourses/Ravenol.docx" download>Скачать прайс</a>
 					</div>
 				</div>
 				<div class="brands__item">
@@ -187,9 +182,7 @@
 						</div>
 						<div class="brands__paragh">
 						Продукция PROTEС соответствует всем требованиям, предъявляемым к техническим маслам и смазкам, отвечает международным стандартам, а так же имеет официальные допуски, одобрения от ведущих производителей оборудования и техники, в частности таких как VOLVO, MAN, Mercedes-Benz, Renault и др. Контроль качества готовой продукции осуществляется сертификацией в системе УкрСЕПРО лабораторий и в центрах сертификации ГСМ г. Киева, а так же в лабораториях Afton Chemical, Evonik Gmbh в Германии и Англии.</div>
-						<div class="brands__download">
-							<a class="link-more" href="resourses/KSM Protec.docx" download>Скачать прайс</a>
-						</div>
+						<a class="brands__download" href="resourses/KSM Protec.docx" download>Скачать прайс</a>
 					</div>
 				</div>
 				<div class="brands__item">
@@ -207,9 +200,7 @@
 						<div class="brands__paragh">
 						Смазочные материалы и специальные жидкости TEMOL – это эффективная защита каждого узла Вашего автомобиля от износа, гарантия безопасного движения в экстремальных ситуациях. Применение полного спектра продукции TEMOL максимально обеспечивает экономию топлива и расходных материалов, а также улучшает эксплуатационные характеристики автомобиля.
  						</div>
- 						<div class="brands__download">
-							<a class="link-more" href="resourses/Temol.docx" download>Скачать прайс</a>
-						</div>
+ 						<a class="brands__download" href="resourses/Temol.docx" download>Скачать прайс</a>
 					</div>
 				</div>
 			</div>
@@ -222,9 +213,7 @@
 				<div class="equipment__more">Наше предприятие находится на рынке оборудования для АЗС в течении 18 лет. <br>За этот период наша продукция показала себя с лучшей стороны в различных условиях эксплуатации: при высокой влажности и в пустынях, в условиях суровых зим и на плавучих АЗС. </div>
 				<div class="equipment__more">На сегодняшний день в нашей производственной программе более 80 моделей раздаточных колонок для бензина, дизельного топлива, керосина, масел, пропан бутана, <br>природного газа, водорода и т.д. </div>
 				<div class="equipment__more third">Кроме этого, мы предлагаем ёмкости для различных продуктов, компрессоры высокого давления для природного газа, стационарные и мобильные модули для заправки пропан бутаном, дизельным топливом и бензином, газовозы, бензовозы, контейнер цистерны и <br>многое другое.</div>
-				<div class="equipment__download">
-				<a class="link-more" href="resourses\Equipment.doc" download>Скачать прайс</a>
-				</div>
+				<a class="equipment__download" href="resourses\Equipment.doc" download>Скачать прайс</a>
 			</div>
 		</div>
 	</section>
