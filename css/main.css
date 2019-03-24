@@ -72,8 +72,9 @@ input {
 
 .head__logo, .footer__logo {
 	background: url('../images/logo.png') no-repeat 22px;
-	font-family: 'Bebas Neue Bold';
+	font-family: 'Bebas Neue';
 	font-size: 36px;
+	font-weight: bold;
 	line-height: 1.1;
 	padding-left: 115px;
 }
@@ -100,8 +101,9 @@ input {
 
 .header__phones {
 	background: url('../images/phone.png') no-repeat left;
-	font-family: 'Bebas Neue Regular';
+	font-family: 'Bebas Neue';
 	font-size: 24px;
+	font-weight: normal;
 	height: 36px;
 	padding-left: 35px;
 }
