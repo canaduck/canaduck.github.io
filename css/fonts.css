@@ -1,0 +1,41 @@
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+			 url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+			 url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('../fonts/BebasNeueRegular/BebasNeueRegular.eot');
+	src: local('../fonts/BebasNeueRegular/Bebas Neue Regular'), local('BebasNeueRegular'),
+		url('../fonts/BebasNeueRegular/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BebasNeueRegular/BebasNeueRegular.woff') format('woff'),
+		url('../fonts/BebasNeueRegular/BebasNeueRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bebas Neue';
+	src: url('../fonts/BebasNeueBold/Bebas Neue Bold.eot');
+	src: local('../fonts/BebasNeueBold/BebasNeueBold'), local('BebasNeueBold'),
+		url('../fonts/BebasNeueBold/BebasNeueBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/BebasNeueBold/BebasNeueBold.woff') format('woff'),
+		url('../fonts/BebasNeueBold/BebasNeueBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
