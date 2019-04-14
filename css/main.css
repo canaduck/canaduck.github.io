@@ -563,7 +563,8 @@ nav.header__navigation {
 	text-align: center;
 	text-transform: uppercase;
 	padding-top: 5px;
-	float: right;
+	display: inline-block;
+	margin-right: 0;
 }
 
 .question__button:hover {
@@ -894,27 +895,18 @@ nav.header__navigation {
     }
 	.brands__item {
 		display: block;
+		padding-top: 20px;
     }
     .brands__description {
     	padding: 0;
     }
     .temol, .ravenol, .ksm {
     	text-align: center;
-    	margin-bottom: 14px;
+    	margin: 7px 0;
     }
-
-    .question__block {
-    	display: block;
-    }
-   
-    .questions__left {
-    	text-align: center;
-    	margin: 0 auto;
-    }
-
-    .question__button {
-    	margin: 0 auto;
-    }
+	.brands {
+		padding-bottom: 20px;
+	}
     .points {
 		height: 805px;
 	}
@@ -949,13 +941,48 @@ nav.header__navigation {
 	.equipment__description, .question__block {
 		padding: 20px 0;
 	}
+	.question__block {
+    	display: block;
+    }
+    .questions__left, .questions__right {
+    	width: 100%;
+    	text-align: center;
+    	margin: 0 auto;
+    }
+    .question__button {
+    	margin: 0 auto;
+    }
 	.questions__comment {
-		margin-bottom: 20px;
+		margin: 15px auto 20px auto;
+		text-align: center;
 	}
 	.brands__download {
 		margin: 0 auto;
 	}
+		.footer__logo {
+		width: 250px;
+		margin: 0 auto;
+	}
+	.footer__address, .footer__phones, .footer__mail {
+		font-size: 14px;
+	}
+	.footer__contacts {
+		text-align: center;
 
+	}
+	.footer__phones {
+		width: 250px;
+		margin: 0 auto;
+	}
+	.footer__address {
+		width: 290px;
+		padding-left: 20px;
+		margin: 0 auto;
+	}
+	.footer__mail {
+		width: 200px;
+		margin: 0 auto;
+	}
 }
 @media screen and (max-width: 432px) {
 	.menu, ul {
@@ -974,7 +1001,7 @@ nav.header__navigation {
 		font-size: 20px;
 	}
 	
-		.goods {
+	.goods {
 		height: 1260px;
 	}
 	.goods__positions {
@@ -1000,31 +1027,12 @@ nav.header__navigation {
 		margin-bottom: 15px;
 	}
 	.form__button, .form__item, .form__current-price, .brands__download, .equipment__download, .question__item, .question__button {
-		width: 310px;
+		width: 280px;
 	}
+	.questions__comment {
+	    margin: 15px 0 20px 0;
+	    font-size: 16px;
+	}
+	
 
-	.footer__logo {
-		width: 250px;
-		margin: 0 auto;
-	}
-	.footer__address, .footer__phones, .footer__mail {
-		font-size: 14px;
-	}
-	.footer__contacts {
-		text-align: center;
-
-	}
-	.footer__phones {
-		width: 250px;
-		margin: 0 auto;
-	}
-	.footer__address {
-		width: 290px;
-		padding-left: 20px;
-		margin: 0 auto;
-	}
-	.footer__mail {
-		width: 200px;
-		margin: 0 auto;
-	}
 }
