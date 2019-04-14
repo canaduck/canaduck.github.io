@@ -840,7 +840,7 @@ nav.header__navigation {
 		text-align: center;
 	}
 	.questions__comment {
-	    margin: 35px 0 70px 0;
+	    margin: 35px auto 70px auto;
 	}
 	
 	
@@ -983,11 +983,14 @@ nav.header__navigation {
 	}
 	.footer__phones {
 		width: 250px;
+		padding-bottom: 5px;
 		margin: 0 auto;
+
 	}
 	.footer__address {
 		width: 290px;
 		padding-left: 20px;
+		padding-bottom: 5px;
 		margin: 0 auto;
 	}
 	.footer__mail {
