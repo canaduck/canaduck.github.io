@@ -130,6 +130,7 @@ nav.header__navigation {
 	height: 36px;
 	padding-left: 35px;
 	padding-top: 4px;
+	color: #000;
 }
 
 .header__mail {
@@ -137,6 +138,7 @@ nav.header__navigation {
 	font-size: 16px;
 	font-weight: 600; 
 	margin-left: 50px;
+	color: #000;
 }
 
 /*Flags*/
@@ -609,7 +611,8 @@ nav.header__navigation {
 	font-weight: 600;
 	margin-left: 52px;
 	margin-bottom: 2px;
-}
+	color: #000;
+	}
 
 .footer__address {
 	background: url('../images/place.png') no-repeat left;
@@ -625,6 +628,11 @@ nav.header__navigation {
 	font-size: 16px;
 	font-weight: 600; 
 	margin-left: 130px;
+	color: #000;
+}
+
+.header__mail:hover, .header__phones:hover, .footer__mail:hover, .footer__phones:hover {
+	color: #9a1c2d;
 }
 
 /*Go to top button*/
@@ -827,6 +835,9 @@ nav.header__navigation {
 	}
 	.question__block {
 		padding-top: 35px;
+	}
+	.questions__left {
+		text-align: center;
 	}
 	.questions__comment {
 	    margin: 35px 0 70px 0;
