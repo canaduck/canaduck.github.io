@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<title>Техэнерготрейд - ГСМ оптом</title>
 	<meta name="description" content="Оптовая торговля дизельным топливом, маслами и оборудованием для АЗС">
 	<meta name="keywords" content="дизель оптом, моторные масла, оборудование для АЗС, жидкости">
@@ -18,47 +19,54 @@
 	<meta name="yandex-verification" content="6b641527ffa2aaae">
 	<!-- Файлы стилей -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"-->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/go_top.css">
 	<script src="js/jquery-2.2.1.min.js"></script>
 	<script src="js/go_top.js"></script>
 </head>
 <body>
 	<header class="header" id="header">
-		<div class="header__red-line"></div>
-		<div class="header__wrap">
-			<div class="head__logo">Тех<span class="header__red">энерго</span><br>трейд</div>
-			<div class="header__navigation">
-				<div class="header__item">
-					<a class="header__link" href="#goods">Товары и услуги</a>
-				</div>
-				<div class="header__item">
-					<a class="header__link" href="#certificates">Сертификаты</a>
-				</div>
-				<div class="header__item">
-					<a class="header__link" href="#questions">Связаться с нами</a>
-				</div>
-			</div>
-			<div class="header__contacts">
-				<div class="header__phones">068 821 99 29 , 073 821 99 29</div>
-				<div class="header__mail">tehtradet@gmail.com</div>
-			</div>	
-		</div>
-	</header>
-	<section class="start" id="start">
-		<div class="container">
-			<div class="main-title">
-				<h1>Реализуем самое качественное ДТ Евро 5, масла и автомобильные жидкости для всех видов техники, узлов и механизмов</h1>
-			</div>
-			<div class="second-title">
-				<div>Полный комплекс оборудования и обслуживание</div>
-				<div>для всех видов заправочных комплексов
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="container-fluid full-screen">
+            <nav class="header__navigation">
+                <a href="#" class="logo">
+                    <div class="head__logo">Тех<span class="header__red">энерго</span><br>трейд</div>
+                </a>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a class="header__link" href="#goods">Товары и услуги</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="header__link" href="#certificates">Сертификаты</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="header__link" href="#questions">Связаться с нами</a>
+                    </li>
+                </ul>
+                <ul class="header__contacts">
+                    <li class="header__phones">068 821 99 29, 073 821 99 29</li>
+                <li class="header__mail">tehtradet@gmail.com</li>
+                </ul>
+            </nav>
+            <div class="offer">
+                <div class="start__lang">
+                    <a class="start__flag1" href="#"></a>
+                    <a class="start__flag2" href="#">
+                        <div class="start__white"></div>
+                        <div class="start__blue"></div>
+                        <div class="start__red"></div>
+                    </a>
+                </div>
+                <div class="offer__title">
+                    Реализуем самое качественное ДТ Евро 5, масла и автомобильные жидкости для всех видов техники, узлов и механизмов
+                </div>
+                <div class="second-title">Полный комплекс оборудования и обслуживание<br>для всех видов заправочных комплексов
+                </div>
+            </div>
+        </div>
+    </header>
 	<section class="goods">
 		<div class="container">
 			<div class="goods__positions" id="goods">
@@ -109,7 +117,7 @@
 				</div>
 				<div class="points__item">
 					<div><img src="images/operator.png" alt="operator"></div>
-					<div class="points__description">Связывайтесь по вопросам поставкии оплаты с менеджером, уточняйте <br>цену</div>
+					<div class="points__description">Связывайтесь по вопросам поставки и оплаты с менеджером, уточняйте <br>цену</div>
 				</div>
 			</div>
 		</div>
@@ -117,14 +125,12 @@
 	<section class="price" id="price">
 		<div class="container">
 			<div class="form">
-				<div class="form__left">
-					<ul class="form__fields">
-						<li><input class="form__item" type="text" name="name" placeholder="Ваше имя" required></li>
-						<li><input class="form__item" type="e-mail" name="email" placeholder="E-mail" required></li>
-						<li><a class="form__button" href="#">Связаться</a>
-						</li>
-					</ul>
-				</div>
+				<form class="form__left" action="send.php" method="post">
+					<input class="form__item" type="text" name="Имя"  placeholder="Ваше имя" required>
+					<!-- pattern="^[А-ЯЁ][а-яё\s]+$"-->
+					<input class="form__item" type="email" name="E-mail" placeholder="E-mail" required>
+					<input class="form__button" type="submit" value="Связаться">
+				</form>
 				<div class="form__right">
 					<div class="form__title-price">Актуальная цена</div>
 					<div class="form__current-price">21,9</div>
@@ -137,12 +143,8 @@
 			<div class="certificates__wrapper">
 				<h1 class="certificates__title">Сертификаты</h1>
 					<div class="certificates__blocks">
-						<div class="certificates__left">
-							<img src="images/certificate1.png" alt="certificate">
-						</div>
-						<div class="certificates__right">
-							<img src="images/passport1.png" alt="passport">
-						</div>
+						<div class="certificates__left"></div>
+						<div class="certificates__right"></div>
 					</div>
 			</div>
 		</div>
@@ -210,7 +212,7 @@
 			<div class="equipment__description">
 				<h1 class="equipment__title">Оборудование для АЗС</h1>
 				<div class="equipment__more">Наше предприятие находится на рынке оборудования для АЗС в течении 18 лет. <br>За этот период наша продукция показала себя с лучшей стороны в различных условиях эксплуатации: при высокой влажности и в пустынях, в условиях суровых зим и на плавучих АЗС. </div>
-				<div class="equipment__more">На сегодняшний день в нашей производственной программе более 80 моделей раздаточных колонок для бензина, дизельного топлива, керосина, масел, пропан бутана, <br>природного газа, водорода и т.д. </div>
+				<div class="equipment__more">На сегодняшний день в нашей производственной программе более 80 моделей раздаточных колонок для бензина, дизельного топлива, керосина, масел, пропан бутана, природного газа, водорода и т.д. </div>
 				<div class="equipment__more third">Кроме этого, мы предлагаем ёмкости для различных продуктов, компрессоры высокого давления для природного газа, стационарные и мобильные модули для заправки пропан бутаном, дизельным топливом и бензином, газовозы, бензовозы, контейнер цистерны и <br>многое другое.</div>
 				<a class="equipment__download" href="resourses\Equipment.doc" download>Скачать прайс</a>
 			</div>
@@ -239,14 +241,17 @@
 		</div>
 	</section>
 	<footer class="footer" id="footer">
-		<div class="footer__wrap">
-			<div class="footer__logo">Тех<span class="footer__red">энерго</span><br>трейд</div>
-			<div class="footer__contacts">
-				<div class="footer__phones">068 821 99 29, 073 821 99 29</div>
-				<div class="footer__address">04074, Киев, Новомостицкая, 25, оф. 2</div>
-				<div class="footer__mail">tehtradet@gmail.com</div>
-			</div>	
-		</div>
+        <div class="footer__wrap">
+            <nav class="footer__navigation">
+                <a href="#" class="logo">
+                    <div class="footer__logo">Тех<span class="footer__red">энерго</span><br>трейд</div>
+                </a>
+                <ul class="footer__contacts">
+                    <li class="footer__phones">068 821 99 29, 073 821 99 29</li>
+                    <li class="footer__address">04074, Киев, Новомостицкая, 25, оф. 2</li>
+                	<li class="footer__mail">tehtradet@gmail.com</li>
+                </ul>
+            </nav>
 	</footer>
 </body>
 </html>

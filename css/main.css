@@ -9,8 +9,9 @@ p, {
 	margin: 0;
 }
 
-a {
+a, a:hover {
 	text-decoration: none;
+	color: #fff;
 }
 
 ul, li, a {
@@ -28,7 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-size: 36px;
 	font-weight: 600;
-	color: #ffffff;
+	color: #fff;
 }
 
 h2 {
@@ -42,7 +43,7 @@ h2 {
 h3 {
 	font-size: 20px;
 	font-weight: 600;
-	color: #000000;
+	color: #000;
 	text-transform: uppercase;
 	margin-top: 24px;
 	margin-bottom: 20px;
@@ -55,48 +56,70 @@ header, footer, section, div, p, button, input, span, a, li {
 input {
 	border: none;
 }
-.header__wrap {
-	width: 1170px;
-	padding-top: 5px;
-	margin: 0 auto;
+.full-screen {
+    padding: 0;
 }
 
-.header__red-line {
-    background-color: #9a1c2d;
-    height: 14px;
+/* First screen */
+
+.header {
+    /* height: 100vh;*/
 }
 
-.header__navigation, .header__wrap, .footer__wrap {
-	display: flex;
+.header .container-fluid {
+   /* height: 100vh;*/
 }
 
-.head__logo, .footer__logo {
+
+.head__logo {
 	background: url('../images/logo.png') no-repeat 22px;
 	font-family: 'Bebas Neue';
 	font-size: 36px;
+	color: #000;
 	font-weight: bold;
 	line-height: 1.1;
 	padding-left: 115px;
 }
 
-.header__red, .footer__red {
+/*Navigation bar*/
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+nav.header__navigation {
+    background-color: #9a1c2d; /* Цвет фона */
+    background-image: linear-gradient(transparent 14%, #fff 14%);
+}
+
+.menu {
+	display: flex;
+}
+.menu__item {
+    padding-top: 25px;
+}
+
+.menu__item a {
+    color: #000;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    transition: all 0.5s ease;
+}
+
+.menu__item a:hover {
+    border-bottom: 4px solid #9a1c2d;
+}
+
+.header__red {
 	color: #9a1c2d;
 }
 
-.header__navigation {
-	padding: 30px 0 30px 85px;
-}
-
-.header__item {
-	margin-right: 60px;
-}
-
-.header__link {
-	color: #000;
-}
-
 .header__contacts {
-	padding-top: 10px;
+	text-align: right;
 }
 
 .header__phones {
@@ -106,28 +129,71 @@ input {
 	font-weight: normal;
 	height: 36px;
 	padding-left: 35px;
+	padding-top: 4px;
 }
 
-.header__mail, .footer__mail {
+.header__mail {
 	background: url('../images/mail.png') no-repeat left;
 	font-size: 16px;
 	font-weight: 600; 
-	margin-left: 55px;
-	padding-left: 30px;
+	margin-left: 50px;
 }
 
-.start {
+/*Flags*/
+.start__lang {
+	display: flex;
+	width: 50px;
+	padding-top: 16px;
+	margin-left: auto;
+  	margin-right: 5%;
+}
+
+.start__flag1 {
+	width: 20px;
+	height: 15px;
+	background: linear-gradient(180deg, #FFF400 50%, #33CCCC	50%);
+	margin-right: 10px;
+}
+.start__flag2 {
+	width: 20px;
+	height: 15px;
+}
+
+.start__white {
+	background: #fff;
+	height: 5px;
+}
+
+.start__blue {
+	background: #1240AB;
+	height: 5px;
+}
+
+.start__red {
+	background: #A60000;
+	height: 5px;
+}
+
+
+/*Main title*/
+.offer {
 	background: url('../images/Track1.png') no-repeat center;
+    text-align: center;
+    color: #fff;
+    
+    /*position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -385px;*/
 }
 
-.container {
-	width: 935px;
-	margin: 0 auto;
-}
-
-.main-title {
-	padding-top: 195px;
+.offer__title {
+	width: 940px;
+	padding-top: 144px;
+	font-size: 36px;
+    font-weight: 700;
 	text-align: center;
+	margin: 0 auto;
 	margin-bottom: 45px;
 	text-transform: inherit;
 }
@@ -135,28 +201,38 @@ input {
 .second-title {
 	font-size: 30px;
 	text-align: center;
-	color: #ffffff;
+	color: #fff;
 	padding-bottom: 251px;
 }
 
+/*Next screens*/
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+/*Section Goods*/
+
 .goods {
 	height: 414px;
-	background-color: #ffffff;
+	background-color: #fff;
+
 }
 
 .goods__positions {
 	height: 544px;
-	background-color: #ffffff;
+	width: inherit;
+	background-color: #fff;
 	border-radius: 20px;
 	margin-top: -64px;
 	position: absolute;
 	display: flex;
 	padding-top: 65px;
+	justify-content: space-evenly;
 }
 
 .goods__item {
 	width: 280px;
-	margin-right: 32px;
 	text-align: center;
 }
 
@@ -165,6 +241,8 @@ input {
 	margin-bottom: 22px;
 }
 
+
+/*Section Brands*/
 .brands-list {
 	text-transform: uppercase;
 	margin-bottom: 5px;
@@ -189,14 +267,15 @@ input {
 	box-shadow: 0 0 0 2px black inset, 0 0 0 4px white inset;
 }
 
-
+/*Section Diesel*/
 .diesel {
+	position: static;
+	height: 616px;
+	padding-top: 132px; 
 	background: url('../images/Track2.png') no-repeat center;
 }
 
 .diesel__description {
-	padding-top: 132px;
-	padding-bottom: 126px;
 	text-align: center;
 }
 
@@ -211,25 +290,30 @@ input {
 	margin-top: 40px;
 }
 
+.diesel__more:last-child {
+	margin-bottom: 40px;
+}
+
+
+/*Section Points*/
 .points {
 	height: 316px;
 }
 
 .points__list {
 	height: 380px;
-	background-color: #ffffff;
+	width: inherit;
+	background-color: #fff;
 	border-radius: 20px 20px 0 0;
 	margin-top: -64px;
 	position: absolute;
 	display: flex;
 	padding-top: 65px;
-	display: flex;
-	padding-left: 60px;
+	justify-content: space-evenly;
 }
 
 .points__item {
 	width: 245px;
-	margin-right: 50px;
 	text-align: center;
 }
 
@@ -241,6 +325,8 @@ input {
 	font-weight: 400;
 }
 
+
+/*Section Price*/
 .price {
 	background: linear-gradient(to right, #000 50%, #9a1c2d 50%);
 }
@@ -251,6 +337,7 @@ input {
 
 .form__left {
 	width: 50%;
+	padding: 30px 0;
 }
 .form__fields {
 	padding: 30px 0;
@@ -277,7 +364,6 @@ input {
 	transition: .2s linear;
 	color: #fff;
 	text-transform: uppercase;
-	padding-top: 7px; 
 }
 
 .form__button:hover {
@@ -300,7 +386,6 @@ input {
 	padding: 24px 0 0 50px;
 }
 
-
 .form__current-price {
 	margin: 22px 0 25px auto;
 	padding-top: 10px;
@@ -314,6 +399,8 @@ input {
 	font-weight: 700;
 }
 
+
+/*Section Certificates*/
 .certificates {
 	background-color: #e8e8e8;
 }
@@ -334,11 +421,22 @@ input {
 	padding: 65px 0 35px 0;
 }
 
-.certificates__left, .certificates__right {
+.certificates__left {
 	width: 50%;
+	padding-top: 70%;
 	text-align: center;
+	background: url('../images/certificate1.png') no-repeat center;
+	background-size: contain;
+}
+.certificates__right {
+	width: 50%;
+	padding-top: 70%;
+	text-align: center;
+	background: url('../images/passport1.png') no-repeat center;
+	background-size: contain;
 }
 
+/*Sectiion Brands*/
 .brands__intro {
 	text-align: center;
 	font-size: 20px;
@@ -389,6 +487,7 @@ input {
 	margin-top: 14px;
 }
 
+/*Section Equipment*/
 .equipment {
 	background: url('../images/gas1.png') no-repeat center;
 }
@@ -396,7 +495,7 @@ input {
 .equipment__description {
 	padding-top: 40px;
 	text-align: center;
-	padding-bottom: 65px;
+	padding-bottom: 39px;
 }
 
 .equipment__more {
@@ -404,9 +503,8 @@ input {
 }
 
 .equipment__download {
-	
+	padding-top: 5px;
 	margin: 0 auto;
-	
 }
 
 .equipment__download:hover {
@@ -420,6 +518,7 @@ input {
 	margin-bottom: 48px; 
 }
 
+/*Section Questions*/
 .questions {
 	background-color: #9a1c2d;
 }
@@ -443,8 +542,12 @@ input {
 	margin: 35px 0 145px 0;
 }
 
+.questions__left {
+	width: 50%;
+}
 .questions__right {
-	padding-left: 265px;
+	width: 50%;
+	text-align: right;
 }
 
 .question__button {
@@ -459,7 +562,8 @@ input {
 	font-size: 22px;
 	text-align: center;
 	text-transform: uppercase;
-	padding-top: 7px;
+	padding-top: 5px;
+	float: right;
 }
 
 .question__button:hover {
@@ -476,39 +580,53 @@ input {
 	margin-bottom: 25px;
 }
 
-.footer__wrap {
-	width: 1170px;
-	padding-top: 15px;
-	padding-bottom: 20px;
-	margin: 0 auto;
+/*Footer*/
+
+.footer__logo {
+	background: url('../images/logo.png') no-repeat 22px;
+	font-family: 'Bebas Neue';
+	font-size: 36px;
+	color: #000;
+	font-weight: bold;
+	line-height: 1.1;
+	padding-left: 115px;
 }
 
+.footer__red {
+	color: #9a1c2d;
+}
 
 .footer__contacts {
-	padding-left: 480px;
+	text-align: right;
+	padding-top: 5px;
+	margin-bottom: 25px;
 }
 
 .footer__phones {
 	background: url('../images/phone.png') no-repeat left;
 	font-size: 18px;
 	font-weight: 600;
-	padding-left: 35px;
 	margin-left: 52px;
 	margin-bottom: 2px;
-}
-
-.footer__mail {
-	margin-left: 135px;
 }
 
 .footer__address {
 	background: url('../images/place.png') no-repeat left;
 	font-size: 16px;
-	font-weight: 600; 
-	padding-left: 25px;
+	font-weight: 600;
+	padding-left: 30px; 
 	padding-top: 5px;
 	padding-bottom: 7px;
 }
+
+.footer__mail {
+	background: url('../images/mail.png') no-repeat left;
+	font-size: 16px;
+	font-weight: 600; 
+	margin-left: 130px;
+}
+
+/*Go to top button*/
 
 #go-top {
   position: fixed; 
@@ -536,40 +654,377 @@ input {
   box-shadow: 0 0 0 2px black inset, 0 0 0 4px white inset;
 }
 
+/*Adaptivity */ 
 
+@media screen and (max-width: 1068px) {
+    nav {
+        padding-left: 1%;
+		padding-right: 1%;
+		position: relative;
+    }
 
-.form__button:hover {
-	box-shadow: 0px 0px 40px rgba(0,0,0,0.6);
+.offer__title {
+	width: 77%;
 }
 
 
-.form__warning {
-	font-size: 12px;
-	font-weight: 300;
-	text-transform: uppercase;
-	margin-top: 40px;
+@media screen and (max-width: 992px) {
+    nav.header__navigation {
+    	position: relative;
+    	background-color: #9a1c2d; /* Цвет фона */
+        background-image: linear-gradient(transparent 7%, #fff 7%);
+    }
+    .menu {
+    	position: absolute;
+    	left:10%; 
+    	right: 10%;   	
+    	top: 99px;
+    	justify-content: center;
+    	}
+	.menu__item a {
+		padding-left: 50px;
+		padding-right: 50px;
+		}
+    .head__logo {
+    	margin-bottom: 86px;
+		}
+	
+	.container {
+	width: 99%;
+	}
+	.offer__title, .diesel__description {
+	width: 99%;
+	}
+
+	.goods {
+	height: 850px;
+}
+	.goods__positions {
+	position: static;
+	display: block; 
+	margin: 0 auto 32px;
+	border-radius: 0;
+	padding-top: 32px;
+	text-align: center;
+	}
+
+	.goods__item, .points__item {
+	width: 280px;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 32px;
+	margin-right: 17px;
+	}
+
+	.goods__item:first-child, .points__item:first-child {
+		margin-left: 17px;
+	}
+
+	.form__left, .form__right {
+		text-align: center;
+	}
+
+	.form__title-price {
+		margin: 0 auto;
+		padding-left: 0;
+	}
+	.form__current-price {
+		margin: 22px auto 25px auto;
+		}
+	.certificates__blocks {
+		display: flex;
+	}
+	.certificates__left, .certificates__right {
+	width: 50%;
+	text-align: center;
+	background-size: contain;
+	margin: 0 auto;
+	}
+	.points {
+		height: 562px;
+	}
+	.points__list {
+	position: static;
+	display: block; 
+	margin: 0 auto 32px;
+	border-radius: 0;
+	padding-top: 32px;
+	text-align: center;
+	}
+	.questions__right {
+	padding-left: 0;
+	}
+	.question__button {
+		margin: 0 auto;
+	}
+	.brands__paragh, .equipment__more {
+		font-size: 16px;
+	}
 }
 
-.footer__list {
-	display: flex;
-	padding: 65px 0;
+@media screen and (max-width: 768px) {
+    .header {
+        padding-left: 1%;
+		padding-right: 1%;
+    }
+    .menu {
+    	left: 4%; 
+    	right: 4%;
+    }
+    .menu__item a {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.offer__title {
+        font-size: 27px;
+    }
+    .second-title {
+		font-size: 24px;
+	}
+	.container {
+	width: 99%;
+	padding-left: 0;
+	padding-right: 0;
+	}
+	.goods {
+		height: 1275px;
+	}
+	.goods__positions {
+		height: 1255px;
+		width: 320px;
+		display: block; 
+		padding-top: 32px;
+		text-align: center;
+	}
+	.goods__item, .points__item {
+		width: 280px;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 40px;
+	}
+	.points {
+		height: 820px;
+	}
+	.goods__item:first-child {
+		margin-left: 0 auto;
+	}
+	.diesel {
+		padding-top: 90px;
+		height: 616px;
+	}
+	.diesel__title {
+		font-size: 30px;
+	}
+	.diesel__more {
+		font-size: 18px;
+		margin-top: 20px;
+	}
+	.points__list {
+		height: 1255px;
+		width: 320px;
+		display: block; 
+	}
+	.question__block {
+		padding-top: 35px;
+	}
+	.questions__comment {
+	    margin: 35px 0 70px 0;
+	}
+	
+	
 }
 
-.footer__item {
-	font-size: 13px;
-	font-weight: 300;
-	color: #fff;
-	text-transform: uppercase;
-	margin-right: 96px;
+
+
+@media screen and (max-width: 576px) {
+    nav.header__navigation {
+    	position: relative;
+    	background-color: #9a1c2d; /* Цвет фона */
+        background-image: linear-gradient(transparent 3%, #fff 3%);
+    }
+
+    .form {
+    	display: block;
+    	padding-bottom: 20px;
+    }
+
+	.form__left, .form__right {
+		width: 100%;
+		padding: 0 auto;
+	}
+    .offer__title {
+        font-size: 21px;
+    }
+
+    nav {
+    	display: block;
+    	}
+
+    .menu {
+    	position: static;
+    	padding-bottom: 12px;
+    	}
+    .menu__item a {
+		padding-left: 10px;
+		padding-right: 10px;
+		}
+
+	.menu__item {
+		padding-top: 12px;
+	}	
+	.head__logo {
+    	margin-bottom: 0;
+    	width: 220px;
+    	margin: 0 auto; 
+    }
+    .header__contacts {
+    	width: 280px;
+    	margin: 0 auto; 
+    	margin-bottom: 10px;
+    }	
+    .second-title {
+    	font-size: 19px;
+    }
+	.container {
+		width: 99%;
+	}
+
+    .diesel__description {
+    	width: 99%;
+    }
+	.brands__item {
+		display: block;
+    }
+    .brands__description {
+    	padding: 0;
+    }
+    .temol, .ravenol, .ksm {
+    	text-align: center;
+    	margin-bottom: 14px;
+    }
+
+    .question__block {
+    	display: block;
+    }
+   
+    .questions__left {
+    	text-align: center;
+    	margin: 0 auto;
+    }
+
+    .question__button {
+    	margin: 0 auto;
+    }
+    .points {
+		height: 805px;
+	}
+	.points__list {
+		height: 700px;
+		display: block;
+		margin-top: -32px;
+		margin-bottom: 32px; 
+		border-radius: 15px;
+		padding-top: 32px;
+		text-align: center;
+		justify-content: space-evenly;
+	}
+	.points__item {
+		width: 245px;
+		justify-content: space-evenly;
+		margin: 0 auto 40px; 
+	}
+	.points__item:first-child {
+		margin: 0 auto 40px;
+	}
+
+	.price {
+    background: #9a1c2d;
+	}
+	.form__right {
+   		padding-top: 0;
+	}
+	.equipment {
+		background: url('../images/gas1.png') repeat center;
+		}
+	.equipment__description, .question__block {
+		padding: 20px 0;
+	}
+	.questions__comment {
+		margin-bottom: 20px;
+	}
+	.brands__download {
+		margin: 0 auto;
+	}
 
 }
+@media screen and (max-width: 432px) {
+	.menu, ul {
+		display: block;
+		text-align: center;
+	}
+	.container {
+		width: 99%;
+	}
+	
+	.question__title, .certificates__title, .diesel__title, .equipment__title {
+		font-size: 24px;
+	}
 
-.footer__item:last-child {
-	font-weight: 800;
-	margin-left: 39px;
-	margin-right: 0;
-}
+	h2 {
+		font-size: 20px;
+	}
+	
+		.goods {
+		height: 1260px;
+	}
+	.goods__positions {
+		width: 99%;
+	}
 
-.footer-yellow {
-	color: #ffde00;
+	.goods__item:first-child {
+		margin: 0 auto;
+		}
+
+	.diesel {
+		padding-top: 15px;
+	}	
+	.brands__download {
+		margin-bottom: 20px;
+	}
+	
+	.equipment__more {
+		font-size: 16px;
+		margin-top: 15px;
+	}
+	.third {
+		margin-bottom: 15px;
+	}
+	.form__button, .form__item, .form__current-price, .brands__download, .equipment__download, .question__item, .question__button {
+		width: 310px;
+	}
+
+	.footer__logo {
+		width: 250px;
+		margin: 0 auto;
+	}
+	.footer__address, .footer__phones, .footer__mail {
+		font-size: 14px;
+	}
+	.footer__contacts {
+		text-align: center;
+
+	}
+	.footer__phones {
+		width: 250px;
+		margin: 0 auto;
+	}
+	.footer__address {
+		width: 290px;
+		padding-left: 20px;
+		margin: 0 auto;
+	}
+	.footer__mail {
+		width: 200px;
+		margin: 0 auto;
+	}
 }
